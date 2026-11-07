@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Book a hall | EverAfter</title><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body class="inner-page"><header class="site-header solid"><a class="brand" href="index.html">Ever<span>After</span><small>WEDDING VENUES</small></a><nav><a href="index.html#venues">Explore halls</a><a href="admin.html">Admin panel ↗</a></nav></header>
+<main class="form-page"><p class="eyebrow">LET THE CELEBRATION BEGIN</p><h1>Request a <em>booking.</em></h1><p class="muted">Share a few details and we'll save your booking request for the venue team.</p>
+<form id="bookingForm" class="form-card">
+<div class="form-grid"><label>Your full name<input name="name" required maxlength="100"></label><label>Email address<input name="email" type="email" required></label><label>Phone number<input name="phone" type="tel"></label><label>Address<input name="address"></label>
+<label class="wide">Choose a wedding hall<select name="hall_id" id="hallSelect" required><option value="">Loading halls…</option></select></label>
+<label>Event type<input name="event_name" placeholder="Wedding / Reception" required></label><label>Event date<input name="event_date" type="date" required></label><label>Start time<input name="start_time" type="time" required></label><label>End time<input name="end_time" type="time" required></label></div>
+<div class="availability-row"><button type="button" class="btn btn-outline" id="checkAvailability">Check availability</button><span id="availabilityMessage" aria-live="polite"></span></div>
+<button class="btn btn-dark full" type="submit">Submit booking request →</button><p id="bookingMessage" class="form-message" aria-live="polite"></p>
+</form></main><script src="js/booking.js"></script></body></html>
